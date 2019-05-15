@@ -1,7 +1,7 @@
 import { readStreamFromS3, writeStreamToS3, streamToSharp } from './src/resize';
 
 const BUCKET = process.env.BUCKET;
-const URL = `http://${BUCKET}.s3-website.${process.env.REGION}.amazonaws.com`;
+const URL = 'https://resizer.bocaapp.com';
 
 export const resize = async (event) => {
   const key = event.queryStringParameters.key;
