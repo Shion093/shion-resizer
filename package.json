@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "sls offline start --port 8080 --dontPrintOutput --env local",
-    "deploy": "sls deploy"
+    "deploy": "sls deploy --profile shion"
   },
   "author": "",
   "license": "ISC",

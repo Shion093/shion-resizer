@@ -12,7 +12,6 @@ custom:
 provider:
   name: aws
   runtime: nodejs10.x
-  profile: shion
   stage: ${env:STAGE, 'dev'}
   region: us-east-1
   environment:
