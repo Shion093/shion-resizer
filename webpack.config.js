@@ -6,15 +6,14 @@ module.exports = {
   entry: slsw.lib.entries,
   target: 'node',
   externals: [nodeExternals()],
-  //mode: slsw.lib.webpack.isLocal ? "development" : "production",
-  mode:  "development",
+  mode: slsw.lib.webpack.isLocal ? "development" : "production",
   optimization: {
     minimize : false
   },
   output: {
     libraryTarget: 'commonjs',
     path: path.join(__dirname, 'dist'),
-    filename: 'handler.js', // this should match the first part of function handler in serverless.yml
+    filename: 'handler.js',
   },
   module: {
     rules:  [
